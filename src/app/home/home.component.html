@@ -1,9 +1,9 @@
 
-<h4>Votre code</h4>
-<p>Entrer les 12 chiffres de l'étiquette AksantiMed de votre médicament.</p>
+<p class="titrepage">VOTRE CODE</p>
+<p class="descriptionpage">Entrer les 12 chiffres de l'étiquette AksantiMed de votre médicament.</p>
 <div class="example-container">
   <mat-form-field hintLabel="Max 12 characters">
-    <input matInput #input maxlength="10" placeholder="Entrer le code votre médicament">
+    <input matInput #input maxlength="12" placeholder="Entrer le code votre médicament">
     <mat-hint align="end">{{input.value?.length || 0}}/12</mat-hint>
   </mat-form-field>
 
@@ -13,9 +13,11 @@
     </mat-select>
     <mat-hint align="end">Here's the dropdown arrow ^</mat-hint>
   </mat-form-field>
-  
+  <!-- Footer -->
+  <button mat-flat-button color="primary">VALIDEZ VOTRE CODE</button>
+  <footer class="main__footer">
+    <small class="copyright__text">Copyright © 2019 AksantiMed</small>
+</footer>
 </div>
-<button mat-flat-button color="primary">VALIDEZ VOTRE CODE</button>
-
 
 

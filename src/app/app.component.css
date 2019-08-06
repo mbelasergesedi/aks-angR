@@ -1,3 +1,5 @@
+
+
 .example-container {
     display: flex;
     flex-direction: column;
@@ -6,6 +8,23 @@
   .example-container > * {
     width: 100%;
   }
+
+  .descriptionpage {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    flex-direction: column;
+  }
+  
+  .titrepage {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    font-weight: bold;
+    flex-direction: column;
+  }
+  
 
 
   
