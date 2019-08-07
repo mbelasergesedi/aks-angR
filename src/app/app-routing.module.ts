@@ -1,6 +1,6 @@
 import { CreateCustomerComponent } from './customers/create-customer/create-customer.component';
 import { CustomersListComponent } from './customers/customers-list/customers-list.component';
-
+import { InteractionsListComponent } from './interactions/interactions-list/interactions-list.component';
 
 import { HomeComponent } from './home/home.component';
 import {CartographieComponent} from './cartographie/cartographie.component';
@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'code', component:HomeComponent},
   { path: 'verification', component:VerificationComponent},
   { path: 'inscription', component:InscriptionComponent},
-  { path: 'interaction', component:InteractionsComponent},
+  { path: 'interaction', component:InteractionsListComponent},
   { path: 'professional', component:ProfessionalComponent},
   { path: 'simple', component:DciComponent},
   { path: 'avancee', component:SearchComplexeComponent},

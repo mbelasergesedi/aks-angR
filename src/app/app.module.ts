@@ -15,12 +15,10 @@ import { CartographieComponent } from './cartographie/cartographie.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { FaqComponent } from './faq/faq.component'; 
-/**FireBase Customers */
+
 import { CustomerDetailsComponent } from './customers/customer-details/customer-details.component';
 import { CustomersListComponent } from './customers/customers-list/customers-list.component';
 import { CreateCustomerComponent } from './customers/create-customer/create-customer.component';
-/**FireBase Interaction */
-
 import { ProfessionalComponent } from './professional/professional.component';
 import { VerificationComponent } from './verification/verification.component';
 import { SearchSimpleComponent } from './search-simple/search-simple.component';
@@ -52,7 +50,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatBadgeModule} from '@angular/material/badge'; 
 import {MatSortModule} from '@angular/material/sort'; 
-import {MatDialogModule} from '@angular/material/dialog'
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 
@@ -65,6 +63,9 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { environment } from '../environments/environment';
+import { InteractionsDetailsComponent } from './interactions/interactions-details/interactions-details.component';
+import { InteractionsListComponent } from './interactions/interactions-list/interactions-list.component';
+import { CreateInteractionsComponent } from './interactions/create-interactions/create-interactions.component';
 
 
 @NgModule({
@@ -87,7 +88,10 @@ import { environment } from '../environments/environment';
     MonCompteComponent,
     AksantimedComponent,
     ServiceComponent,
-    DciComponent
+    DciComponent,
+    InteractionsDetailsComponent,
+    InteractionsListComponent,
+    CreateInteractionsComponent
   ],
   imports: [
     BrowserModule,

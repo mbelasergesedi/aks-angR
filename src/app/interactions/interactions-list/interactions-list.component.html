@@ -1,0 +1,15 @@
+<p>interactions-list works!</p>
+
+<div *ngFor="let i  of interactions">
+    <div><h3>{{i.titre}}</h3></div>
+    <div *ngIf= "i.assocList">
+        <div *ngFor= "let a of i.assocList">
+            <h4>{{a.sousTitre}}</h4>
+            <p>{{a.conseq}}</p>
+            <p>{{a.emploi}}</p>
+            <p>{{a.emploiDesc}}</p>
+            <p>{{a.sousTitre}}</p>     
+        </div>
+    </div>  
+</div> 
+
