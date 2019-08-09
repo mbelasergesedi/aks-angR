@@ -15,6 +15,10 @@ import { MonCompteComponent } from './mon-compte/mon-compte.component';
 import { ServiceComponent } from './service/service.component';
 import { AksantimedComponent } from './aksantimed/aksantimed.component';
 import { DciComponent } from './dci/dci.component';
+import { TreeInteractionsComponent } from './tree-interactions/tree-interactions.component';
+import { TreewiewinteractionsComponent } from './treewiewinteractions/treewiewinteractions.component';
+
+
 /*Liens vers les pages */
 const routes: Routes = [
   { path: 'contact', component:ContactComponent},
@@ -30,11 +34,13 @@ const routes: Routes = [
   { path: 'aksantimed', component:AksantimedComponent},
   { path: 'service', component:ServiceComponent},
   { path: 'faq', component: FaqComponent},
+  { path: 'vue', component: TreeInteractionsComponent},
   { path: '', redirectTo: 'customers', pathMatch: 'full' },
   { path: 'customers', component: CustomersListComponent },
   { path: 'add', component: CreateCustomerComponent },
-  { path: 'dci', component:DciComponent}
-
+  { path: 'dci', component:DciComponent},
+  { path: 'tree', component:TreewiewinteractionsComponent}
+  
   //{ path: 'customers', component: CustomersListComponent },
 ];
 import { NgModule } from '@angular/core';

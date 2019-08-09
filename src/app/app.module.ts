@@ -25,10 +25,12 @@ import { SearchSimpleComponent } from './search-simple/search-simple.component';
 import { SearchComplexeComponent } from './search-complexe/search-complexe.component';
 import { InteractionsComponent } from './interactions/interactions.component';
 import { InscriptionComponent } from './inscription/inscription.component';
+import { TreeInteractionsComponent } from './tree-interactions/tree-interactions.component';
 import { MonCompteComponent } from './mon-compte/mon-compte.component';
 import { AksantimedComponent } from './aksantimed/aksantimed.component';
 import { DciComponent } from './dci/dci.component';
 import { ServiceComponent } from './service/service.component';
+//import { TreewiewinteractionsComponent } from './treewiewinteractions/treewiewinteractions.component';
 
 /** Material*/
 import {MatCheckboxModule} from '@angular/material/checkbox';
@@ -51,12 +53,10 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatBadgeModule} from '@angular/material/badge'; 
 import {MatSortModule} from '@angular/material/sort'; 
 import {MatDialogModule} from '@angular/material/dialog';
-
-
-
-
-
-
+import {MatTreeModule} from '@angular/material/tree';
+//import {NestedTreeControl} from '@angular/cdk/tree';
+import {NestedTreeControl} from '@angular/cdk/tree';
+import {MatTreeNestedDataSource} from '@angular/material/tree';
 //Firebase
 
 import { AngularFireModule } from '@angular/fire';
@@ -66,6 +66,7 @@ import { environment } from '../environments/environment';
 import { InteractionsDetailsComponent } from './interactions/interactions-details/interactions-details.component';
 import { InteractionsListComponent } from './interactions/interactions-list/interactions-list.component';
 import { CreateInteractionsComponent } from './interactions/create-interactions/create-interactions.component';
+
 
 
 @NgModule({
@@ -91,7 +92,8 @@ import { CreateInteractionsComponent } from './interactions/create-interactions/
     DciComponent,
     InteractionsDetailsComponent,
     InteractionsListComponent,
-    CreateInteractionsComponent
+    CreateInteractionsComponent,
+    TreeInteractionsComponent
   ],
   imports: [
     BrowserModule,
@@ -123,6 +125,7 @@ import { CreateInteractionsComponent } from './interactions/create-interactions/
     MatSortModule,
     MatDialogModule,
     PortalModule,
+    MatTreeModule,
     ScrollingModule
   ],
   providers: [],

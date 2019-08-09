@@ -7,9 +7,7 @@ import { Interaction } from './interactions.component';
   })
 
   export class CustomerService {
-
-    private dbPath = '/interactions';
-  
+    private dbPath = '/interactions'; 
     customersRef: AngularFireList<Interaction> = null;
   
     constructor(private db: AngularFireDatabase) {
