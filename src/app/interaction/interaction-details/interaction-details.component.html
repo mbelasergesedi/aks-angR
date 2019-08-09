@@ -1,0 +1,19 @@
+<div *ngIf="interaction">
+  <div>
+    <label>Nom: </label> {{interaction.titre}}
+  </div><!--
+  <div>
+    <label>Dci: </label> {{customer.age}}
+  </div>
+  <div>
+    <label>Active: </label> {{customer.active}}
+  </div>-->
+ 
+  <span class="button is-small btn-primary" *ngIf='interaction.active' (click)='updateActive(false)'>Nom autorisé</span>
+ 
+  <span class="button is-small btn-primary" *ngIf='!interaction.active' (click)='updateActive(true)'>Autorisé</span>
+ 
+  <span class="button is-small btn-danger" (click)='deleteInteraction()'>Effacer</span>
+ 
+  <hr/>
+</div>

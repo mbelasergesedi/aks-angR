@@ -17,7 +17,7 @@ import { AksantimedComponent } from './aksantimed/aksantimed.component';
 import { DciComponent } from './dci/dci.component';
 import { TreeInteractionsComponent } from './tree-interactions/tree-interactions.component';
 import { TreewiewinteractionsComponent } from './treewiewinteractions/treewiewinteractions.component';
-
+import { InteractionListComponent } from './interaction/interaction-list/interaction-list.component';
 
 /*Liens vers les pages */
 const routes: Routes = [
@@ -39,6 +39,7 @@ const routes: Routes = [
   { path: 'customers', component: CustomersListComponent },
   { path: 'add', component: CreateCustomerComponent },
   { path: 'dci', component:DciComponent},
+  { path: 'risque', component:InteractionListComponent}, 
   { path: 'tree', component:TreewiewinteractionsComponent}
   
   //{ path: 'customers', component: CustomersListComponent },

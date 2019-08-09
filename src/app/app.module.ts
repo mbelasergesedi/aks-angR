@@ -19,6 +19,12 @@ import { FaqComponent } from './faq/faq.component';
 import { CustomerDetailsComponent } from './customers/customer-details/customer-details.component';
 import { CustomersListComponent } from './customers/customers-list/customers-list.component';
 import { CreateCustomerComponent } from './customers/create-customer/create-customer.component';
+
+
+import { InteractionDetailsComponent } from './interaction/interaction-details/interaction-details.component';
+import { InteractionListComponent } from './interaction/interaction-list/interaction-list.component';
+import { CreateInteractionComponent } from './interaction/create-interaction/create-interaction.component';
+
 import { ProfessionalComponent } from './professional/professional.component';
 import { VerificationComponent } from './verification/verification.component';
 import { SearchSimpleComponent } from './search-simple/search-simple.component';
@@ -30,7 +36,7 @@ import { MonCompteComponent } from './mon-compte/mon-compte.component';
 import { AksantimedComponent } from './aksantimed/aksantimed.component';
 import { DciComponent } from './dci/dci.component';
 import { ServiceComponent } from './service/service.component';
-import { TreewiewinteractionsComponent } from './treewiewinteractions/treewiewinteractions.component';
+//import { TreewiewinteractionsComponent } from './treewiewinteractions/treewiewinteractions.component';
 
 /** Material*/
 import {MatCheckboxModule} from '@angular/material/checkbox';
@@ -75,6 +81,12 @@ import { CreateInteractionsComponent } from './interactions/create-interactions/
     CustomerDetailsComponent,
     CustomersListComponent,
     CreateCustomerComponent,
+
+
+    InteractionDetailsComponent,
+    InteractionListComponent,
+    CreateInteractionComponent,
+
     NavComponent,
     CartographieComponent,
     ContactComponent,
