@@ -30,7 +30,7 @@ import { MonCompteComponent } from './mon-compte/mon-compte.component';
 import { AksantimedComponent } from './aksantimed/aksantimed.component';
 import { DciComponent } from './dci/dci.component';
 import { ServiceComponent } from './service/service.component';
-//import { TreewiewinteractionsComponent } from './treewiewinteractions/treewiewinteractions.component';
+import { TreewiewinteractionsComponent } from './treewiewinteractions/treewiewinteractions.component';
 
 /** Material*/
 import {MatCheckboxModule} from '@angular/material/checkbox';
