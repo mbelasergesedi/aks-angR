@@ -1,11 +1,17 @@
-<p class="titrepage">PROFESSIONELS</p>
+<br>
+<p class="titrepage">Professionels</p>
 <p class="descriptionpage">Cette section est reservée exclusivement aux professionels.</p>
+<button mat-button [matMenuTriggerFor]="menu">Services</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Ouvrez votre compte</button>
+  <button mat-menu-item>Votre compte</button>
+  <button mat-menu-item>Votre abonnement</button>
+</mat-menu>
 <div style="text-align:center">
   <mat-tab-group>
-    <mat-tab label="Vérifier un code"> Vérifier un code </mat-tab>
-    <mat-tab label="Annuaire des pharmacien"> Annuaire des pharmacien </mat-tab>
-    <mat-tab label="Notifications"> Notifications </mat-tab>
+    <mat-tab label="Annuaire des pharmacien"> Annuaire des pharmaciens </mat-tab>
+    <mat-tab label="Annuaire des medecins"> Annuaire des medecins </mat-tab>
   </mat-tab-group>
 
-  <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+ <!-- <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>-->
 </div>

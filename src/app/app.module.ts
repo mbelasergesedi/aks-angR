@@ -10,6 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import {ScrollingModule} from '@angular/cdk/scrolling';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 /** Page de l'Application*/
 import { CartographieComponent } from './cartographie/cartographie.component';
 import { ContactComponent } from './contact/contact.component';
@@ -60,6 +62,8 @@ import {MatBadgeModule} from '@angular/material/badge';
 import {MatSortModule} from '@angular/material/sort'; 
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTreeModule} from '@angular/material/tree';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatDividerModule} from '@angular/material/divider';
 //import {NestedTreeControl} from '@angular/cdk/tree';
 import {NestedTreeControl} from '@angular/cdk/tree';
 import {MatTreeNestedDataSource} from '@angular/material/tree';
@@ -127,6 +131,7 @@ import { CreateInteractionsComponent } from './interactions/create-interactions/
     MatTableModule,
     MatCardModule,
     MatInputModule,
+    MatDividerModule,
     FormsModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
@@ -138,6 +143,9 @@ import { CreateInteractionsComponent } from './interactions/create-interactions/
     MatDialogModule,
     PortalModule,
     MatTreeModule,
+    MatExpansionModule,
+    HttpClientModule,
+
     ScrollingModule
   ],
   providers: [],
