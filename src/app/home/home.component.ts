@@ -1,9 +1,10 @@
 import { Component, OnInit, Injectable, ɵisObservable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { HomeService } from './home.service';
 
-//import { Observable } from 'rxjs/Observable';
-//import { map } from 'rxjs/operators';
+import { HomeService } from './home.service';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+// import { HttpClient, HttpParams } from '@angular/common/http';
+// import { Observable } from 'rxjs/Observable';
+// import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -16,36 +17,33 @@ import { HomeService } from './home.service';
 })
 
 export class HomeComponent implements OnInit {
-
-
   constructor(private homeService: HomeService) { }
-  navName: String = 'Poke'
+  navName = 'Poke';
 
-  public loggedname = "Mbela Sedi Serge";
-  public myId = "testID";
+  public loggedname = 'Mbela Sedi Serge';
+  public myId = 'testID';
   myResponse;
   myObj;
   dbParam;
   ngOnInit() {
+    this.homeService.getNews().subscribe((data) => {
+      this.myResponse = data;
 
-    this.homeService.getNews().subscribe((data)=>{
-  
-      console.log(data);
-      this.myResponse =data ; 
-     // this.articles = data['articles'];
     });
-
-
   }
-
+  onClickSubmit(formData) {
+    alert('Your Email is : ' + formData.code);
+  }
   greetUser() {
-    return "Bienvenue " + this.loggedname;
+    return 'Bienvenue ' + this.loggedname;
   }
 
 }
 
-class MyTel {
-  constructor(public area: string, public exchange: string, public subscriber: string) { }
+export class MyCode {
+  constructor(
+    public code: string,
+    public subscriber: string) { }
 }
 
 

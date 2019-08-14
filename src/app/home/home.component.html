@@ -1,25 +1,14 @@
  <br>
-<p class="titrepage">Votre code</p>
-<p class="descriptionpage">Entrer les 12 chiffres de l'étiquette AksantiMed de votre médicament.</p>
-<div class="example-container">
-  <mat-form-field hintLabel="Max 12 characters">
-    <input matInput #input maxlength="12" placeholder="Entrer le code votre médicament">
-    <mat-hint align="end">{{input.value?.length || 0}}/12</mat-hint>
-  </mat-form-field>
+ <p class="titrepage">Votre code</p>
+ <p class="descriptionpage">Entrer les 12 chiffres de l'étiquette AksantiMed de votre médicament.</p>
 
-  
-  <!-- Footer --><mat-icon svgIcon="thumbs-up" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
-  <button mat-flat-button color="primary">VALIDEZ VOTRE CODE</button>
-  <p [innerHTML]="myResponse"></p>
+ <div class="example-container">
+   <mat-form-field hintLabel="Max 12 characters">
+     <input matInput #input maxlength="12" placeholder="Entrer le code votre médicament" name="code" id="code">
+     <!--<input type="text" class="form-control" id="name" required [(ngModel)]="customer.name" name="name">-->
 
-  
-  <footer class="main__footer">
-    <small class="copyright__text">Copyright © 2019 AksantiMed</small>
-</footer>
-</div>
-
-
-
-
-
-
+     <mat-hint align="end">{{input.value?.length || 0}}/12</mat-hint>
+   </mat-form-field>
+   <button mat-flat-button color="primary" type="submit" value="submit">VALIDEZ VOTRE CODE</button>
+   <p [innerHTML]="myResponse"></p>
+ </div>

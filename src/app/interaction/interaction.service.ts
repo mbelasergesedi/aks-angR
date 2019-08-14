@@ -7,7 +7,7 @@ import { Interaction } from './interaction';
 })
 export class InteractionService {
 
-  private dbPath = '/interactions';
+  private dbPath = '/interflat';
 
   interactionRef: AngularFireList<Interaction> = null;
 

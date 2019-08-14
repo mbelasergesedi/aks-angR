@@ -2,7 +2,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 /**Mobile */
-import {LayoutModule} from '@angular/cdk/layout'; 
+import {LayoutModule} from '@angular/cdk/layout';
 import {PlatformModule} from '@angular/cdk/platform';
 import {PortalModule} from '@angular/cdk/portal';
 import {NgModule} from '@angular/core';
@@ -11,12 +11,12 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import { HttpClientModule } from '@angular/common/http';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 /** Page de l'Application*/
 import { CartographieComponent } from './cartographie/cartographie.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
-import { FaqComponent } from './faq/faq.component'; 
+import { FaqComponent } from './faq/faq.component';
 
 import { CustomerDetailsComponent } from './customers/customer-details/customer-details.component';
 import { CustomersListComponent } from './customers/customers-list/customers-list.component';
@@ -38,44 +38,47 @@ import { MonCompteComponent } from './mon-compte/mon-compte.component';
 import { AksantimedComponent } from './aksantimed/aksantimed.component';
 import { DciComponent } from './dci/dci.component';
 import { ServiceComponent } from './service/service.component';
-//import { TreewiewinteractionsComponent } from './treewiewinteractions/treewiewinteractions.component';
+import {ListmedComponent} from './interactions/listmed/listmed.component';
 
-/** Material*/
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatMenuModule} from '@angular/material/menu'; 
-import {MatSidenavModule} from '@angular/material/sidenav'; 
-import {MatButtonModule} from '@angular/material/button'; 
-import {MatIconModule} from '@angular/material/icon'; 
+import {MatMenuModule} from '@angular/material/menu';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
-import {MatSelectModule} from '@angular/material/select'; 
+import {MatSelectModule} from '@angular/material/select';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTableModule} from '@angular/material/table';
 import {MatCardModule} from '@angular/material/card';
 import {ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule, MatInputModule } from '@angular/material';
 import {FormsModule } from '@angular/forms';
-import {MatTabsModule} from '@angular/material/tabs'; 
+import {MatTabsModule} from '@angular/material/tabs';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import {MatBadgeModule} from '@angular/material/badge'; 
-import {MatSortModule} from '@angular/material/sort'; 
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatSortModule} from '@angular/material/sort';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTreeModule} from '@angular/material/tree';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDividerModule} from '@angular/material/divider';
-//import {NestedTreeControl} from '@angular/cdk/tree';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+
+
 import {NestedTreeControl} from '@angular/cdk/tree';
 import {MatTreeNestedDataSource} from '@angular/material/tree';
-//Firebase
+
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
-import { AngularFireAuthModule } from "@angular/fire/auth";
+
 import { environment } from '../environments/environment';
 import { InteractionsDetailsComponent } from './interactions/interactions-details/interactions-details.component';
 import { InteractionsListComponent } from './interactions/interactions-list/interactions-list.component';
 import { CreateInteractionsComponent } from './interactions/create-interactions/create-interactions.component';
+import { AutocompletemedComponent } from './autocompletemed/autocompletemed.component';
+
 
 
 
@@ -109,7 +112,8 @@ import { CreateInteractionsComponent } from './interactions/create-interactions/
     InteractionsDetailsComponent,
     InteractionsListComponent,
     CreateInteractionsComponent,
-    TreeInteractionsComponent
+    TreeInteractionsComponent,
+    AutocompletemedComponent
   ],
   imports: [
     BrowserModule,
@@ -145,7 +149,7 @@ import { CreateInteractionsComponent } from './interactions/create-interactions/
     MatTreeModule,
     MatExpansionModule,
     HttpClientModule,
-
+    MatAutocompleteModule,
     ScrollingModule
   ],
   providers: [],

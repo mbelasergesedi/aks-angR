@@ -7,12 +7,12 @@ import { Interaction } from './interactions.component';
   })
 
   export class CustomerService {
-    private dbPath = '/interactions'; 
+    private dbPath = '/interactions';
     customersRef: AngularFireList<Interaction> = null;
-  
+
     constructor(private db: AngularFireDatabase) {
       this.customersRef = db.list(this.dbPath);
-     console.log('customersRef');
+
     }
 }
 
